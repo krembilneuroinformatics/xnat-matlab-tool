@@ -18,7 +18,7 @@ Things you can do:
 ## Login
 The first step to use this tool is to login.
 
-```Matlab
+```bash
 # method 1
 xnat = XNATSession('xnat_username')   # a pop-up will prompt you for your password
 
@@ -35,7 +35,7 @@ Note: You must login before you can perform any of the following tasks. XNAT aut
 
 ## Querying XNAT
 
-```Matlab
+```bash
 # Get a cell array with information about all subjects in your XNAT project
 project = 'TST01_CMH'
 subjects = xnat.get_subjects(project)
