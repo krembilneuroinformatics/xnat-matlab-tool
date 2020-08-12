@@ -1,4 +1,4 @@
-# xnat-matlab-tool
+# XNAT-Matlab Tool
 A matlab tool to interface with XNAT.
 
 You can use this tool to interface with XNAT with matlab programmatically.
