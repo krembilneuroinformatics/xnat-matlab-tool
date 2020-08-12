@@ -31,7 +31,7 @@ xnat = XNATSession('xnat_username', 'pass_file', '/path/to/pass_file.txt')    # 
 
 *xnat_username* and *xnat_password* should be replaced with your xnat username and password respectively. 
 
-Note: You must login before you can perform any of the following tasks. XNAT automatically logs you out after 15 mins of idle time. If this happens to you simply log in again before performing your actions. TODO: create a keep-alive background process
+Note: You must login before you can perform any of the following tasks. XNAT automatically logs you out after 15 mins of idle time. If this happens to you, simply login again before performing your actions. TODO: create a keep-alive background process
 
 ## Querying XNAT
 
@@ -57,7 +57,7 @@ scan = scans{1}.ID
 ```
 
 ## Download Data
-```Matlab
+```bash
 
 # download MR/PET or any dicom data from a given scan to a zipfile
 data_file = xnat.download_dcm(project, subject, experiment, scan, 'data.zip')
@@ -67,7 +67,7 @@ eeg_file = xnat.download_eeg(project, subject, experiment, scan, 'eeg_data.cnt')
 ```
 
 ## Upload Data
-```Matlab
+```bash
 
 # Upload EEG data
 experiment = 'TST01_CMH_00000001_03_SE01_EEG'
